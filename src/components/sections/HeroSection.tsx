@@ -53,29 +53,34 @@ const HeroSection = () => {
 
           {/* Social Links & CV */}
           <div className="flex flex-wrap justify-center items-center gap-4">
+                    <a
+            href="public/files/Neeru.pdf"  // Replace with actual file path
+            download="Neeru_Chaudhary_CV.pdf"
+          >
             <Button className="btn-academic" size="lg">
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </Button>
+            </a>
             
             <div className="flex gap-3">
               <Button variant="outline" size="sm" asChild>
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/neeru-chaudhary-715103142/" aria-label="LinkedIn">
                   <Linkedin className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="#" aria-label="ORCID">
+                <a href="https://orcid.org/0000-0001-8753-7326" aria-label="ORCID">
                   <span className="text-xs font-bold">OR</span>
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="#" aria-label="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=Dfx0TaQAAAAJ&hl=en" aria-label="Google Scholar">
                   <span className="text-xs font-bold">GS</span>
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="#" aria-label="GitHub">
+                <a href="https://github.com/neeruwater" aria-label="GitHub">
                   <Github className="h-4 w-4" />
                 </a>
               </Button>

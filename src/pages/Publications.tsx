@@ -7,109 +7,122 @@ import Navigation from "@/components/Navigation";
 const Publications = () => {
   const publications = [
     {
-      title: "Machine Learning-Guided Discovery of Novel Catalysts for CO₂ Reduction",
-      authors: "N. Chaudhary, S. Kumar, A. Patel, M. Johnson",
-      journal: "Nature Catalysis",
-      year: "2024",
-      volume: "7",
-      pages: "123-134",
-      doi: "10.1038/s41929-024-01234-5",
-      type: "First Author",
+      title: "Harnessing Physics-inspired Machine Learning to Design Nanocluster Catalysts for Dehydrogenating Liquid Organic Hydrogen Carriers",
+      authors: "Chuhong Lin, Bryan C. S. Lee, Uzma Anjum, Asmese M. Prabhu, Neeru Chaudhary, Rong Xu, Tej S. Choksi",
+      journal: "Applied Catalysis B: Environmental Energy",
+      year: "2025",
+      volume: "371",
+      pages: "125192",
+      doi: "https://doi.org/10.1016/j.apcatb.2025.125192",
+      type: "Co-Author",
       featured: true,
       cover: false,
-      topics: ["Machine Learning", "CO₂ Reduction", "Catalysis"]
+      topics: ["Machine Learning", "Catalysis", "Hydrogen Storage"]
     },
     {
-      title: "Functional Data Analysis for Polymer Property Prediction: A Deep Learning Approach",
-      authors: "N. Chaudhary, R. Williams, K. Thompson, J. Davis",
-      journal: "Macromolecules",
+      title: "CO₂ Reduction Thermodynamics and Kinetics on Bulk and Two-Dimensional Electrocatalysts: From First Principles to Experimental Outcomes",
+      authors: "Raghavendra Rajagopalan, Shivam Chaturvedi, Neeru Chaudhary, Abhijit Gogoi, Tej S. Choksi, Ananth Govind Rajan",
+      journal: "Current Opinion in Electrochemistry",
+      year: "2025",
+      volume: "51",
+      pages: "101668",
+      doi: "https://doi.org/10.1016/j.coelec.2025.101668",
+      type: "Co-Author",
+      featured: true,
+      cover: false,
+      topics: ["CO₂ Reduction", "DFT", "Electrocatalysis"]
+},
+    {
+      title: "Capturing Surface Coverage Effects in Heterogeneous Catalysis",
+      authors: "Alyssa J.R. Hensley, Neeru Chaudhary, Naseeha Cardwell, Isaac Onyango, Yong Wang, Di Wu, Jean-Sabin McEwen",
+      journal: "Journal of Physical Chemistry C",
       year: "2024",
-      volume: "57",
-      pages: "2456-2470",
-      doi: "10.1021/acs.macromol.2024.00123",
-      type: "First Author",
+      volume: "129",
+      pages: "1907-1929",
+      doi: "http://dx.doi.org/10.1021/acs.jpcc.4c05086",
+      type: "Co-Author",
       featured: true,
       cover: true,
-      topics: ["Polymer Informatics", "Deep Learning", "Materials Science"]
-    },
-    {
-      title: "Electrocatalytic Hydrogen Peroxide Synthesis in Confined Environments",
-      authors: "N. Chaudhary, P. Zhang, L. Anderson, M. Chen",
-      journal: "ACS Catalysis",
-      year: "2023",
-      volume: "13",
-      pages: "8901-8915",
-      doi: "10.1021/acscatal.3c02456",
-      type: "First Author",
-      featured: true,
-      cover: false,
-      topics: ["Electrocatalysis", "Green Chemistry", "DFT"]
-    },
-    {
-      title: "DFT Insights into Oxygenate Reduction Mechanisms on Transition Metal Surfaces",
-      authors: "N. Chaudhary, S. Patel, R. Kumar, A. Singh",
+      topics: ["Surface Science", "Catalysis", "Coverage Effects"]
+},
+   {
+      title: "Determining Catalytically Relevant Surfaces through Coverage-Dependent Lattice Gas Models: Carbon Adsorption on Fe(100)",
+      authors: "Neeru Chaudhary, Isaac Onyango, Yong Wang, Jean-Sabin McEwen",
       journal: "Journal of Physical Chemistry C",
       year: "2023",
       volume: "127",
-      pages: "15678-15692",
-      doi: "10.1021/acs.jpcc.3c04567",
+      pages: "14163-14176",
+      doi: "http://dx.doi.org/10.1021/acs.jpcc.3c01761",
       type: "First Author",
-      featured: false,
-      cover: false,
-      topics: ["DFT", "Surface Chemistry", "Reaction Mechanisms"]
-    },
-    {
-      title: "Ab Initio Molecular Dynamics Study of Water-Metal Interfaces in Catalysis",
-      authors: "N. Chaudhary, K. Wilson, T. Brown, J. Lee",
-      journal: "Journal of Chemical Physics",
-      year: "2022",
-      volume: "157",
-      pages: "234567",
-      doi: "10.1063/5.0123456",
-      type: "First Author",
-      featured: false,
-      cover: false,
-      topics: ["AIMD", "Interface Chemistry", "Water Splitting"]
-    },
-    {
-      title: "Cluster Expansion Models for Alloy Catalyst Design",
-      authors: "M. Johnson, N. Chaudhary, P. Davis, K. Smith",
-      journal: "Physical Review Materials",
-      year: "2022",
-      volume: "6",
-      pages: "045801",
-      doi: "10.1103/PhysRevMaterials.6.045801",
+      featured: true,
+      cover: true,
+      topics: ["Surface Science", "Catalysis", "Adsorption"]
+},
+  {
+      title: "Determining the Hydration Energetics on Carbon-Supported Ru Catalysts: An Adsorption Calorimetry and Density Functional Theory Study",
+      authors: "Xianghui Zhang, Neeru Chaudhary, Megan R. Hawkins, Cody B. Cockreham, Chen Yang, Junnan Shangguan, Alyssa J. R. Hensley, Ya-Huei Cathy Chin, Su Ha, Jean-Sabin McEwen, Di Wu",
+      journal: "Catalysis Today",
+      year: "2021",
+      volume: "365",
+      pages: "172–180",
+      doi: "",
       type: "Co-Author",
       featured: false,
       cover: false,
-      topics: ["Cluster Expansion", "Alloy Catalysts", "Materials Design"]
-    },
-    {
-      title: "Sustainable Phenol Removal and Xylitol Production: Process Optimization",
-      authors: "N. Chaudhary, A. Sharma, R. Gupta",
-      journal: "Green Chemistry",
-      year: "2021",
-      volume: "23",
-      pages: "6789-6802",
-      doi: "10.1039/D1GC02345F",
+      topics: ["Catalysis", "Adsorption", "DFT"]
+},
+{
+      title: "Coverage-Dependent Adsorption of Phenol on Pt(111) from First Principles",
+      authors: "Neeru Chaudhary, Alyssa Hensley, Greg Collinge, Yong Wang, Jean-Sabin McEwen",
+      journal: "Journal of Physical Chemistry C",
+      year: "2020",
+      volume: "124",
+      pages: "356-362",
+      doi: "",
       type: "First Author",
       featured: false,
-      cover: false,
-      topics: ["Green Chemistry", "Biotechnology", "Process Engineering"]
-    },
-    {
-      title: "Neural Network Approaches for Catalyst Activity Prediction",
-      authors: "S. Kumar, N. Chaudhary, L. Zhang, M. Patel",
-      journal: "Chemical Science",
-      year: "2021",
-      volume: "12",
-      pages: "11234-11248",
-      doi: "10.1039/D1SC03456G",
-      type: "Co-Author",
+      cover: true,
+      topics: ["Phenol Adsorption", "Catalysis", "DFT"]
+},
+{
+      title: "Removal of Phenol Using Fly Ash and Impregnated Fly Ash: An Approach to Equilibrium, Kinetic, and Thermodynamic Study",
+      authors: "Neeru Chaudhary*, Chandrajit Balomajumder, Bhumica Agrawal, Vidyasagar Jagati",
+      journal: "Separation Science and Technology",
+      year: "2015",
+      volume: "50",
+      pages: "690-699",
+      doi: "",
+      type: "Corresponding Author",
       featured: false,
       cover: false,
-      topics: ["Neural Networks", "Catalyst Prediction", "Computational Chemistry"]
-    }
+      topics: ["Adsorption", "Environmental Engineering", "Phenol Removal"]
+},
+{
+      title: "Optimization Study of Adsorption Parameters for Removal of Phenol on Aluminum Impregnated Fly Ash Using Response Surface Methodology",
+      authors: "Neeru Chaudhary*, Chandrajit Balomajumder",
+      journal: "Journal of the Taiwan Institute of Chemical Engineers",
+      year: "2014",
+      volume: "45",
+      pages: "852–859",
+      doi: "",
+      type: "Corresponding Author",
+      featured: false,
+      cover: false,
+      topics: ["Adsorption", "Optimization", "Environmental Remediation"]
+},
+{
+      title: "Biological Production of Xylitol from Corn Husk and Switchgrass by Pichia stiptis",
+      authors: "Neeru Chaudhary*, Chandrajit Balomajumder, Vidyasagar Jagati",
+      journal: "Research Journal of Chemical Sciences",
+      year: "2013",
+      volume: "3",
+      pages: "58-64",
+      doi: "",
+      type: "Corresponding Author",
+      featured: false,
+      cover: false,
+      topics: ["Bioprocessing", "Xylitol", "Fermentation"]
+}
   ];
 
   const topicColors = {
@@ -251,13 +264,32 @@ const Publications = () => {
             <h3 className="text-2xl academic-heading">Citation Information</h3>
             <p className="academic-body text-muted-foreground">
               For citation metrics and complete publication list, please visit my 
-              Google Scholar, ORCID, or ResearchGate profiles.
+              Google Scholar, ORCID, or Scopus profiles.
             </p>
             <div className="flex justify-center space-x-4">
+            <a
+              href="https://scholar.google.com/citations?user=Dfx0TaQAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="outline" size="sm">Google Scholar</Button>
+            </a>
+            <a
+              href="https://orcid.org/0000-0001-8753-7326"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="outline" size="sm">ORCID</Button>
-              <Button variant="outline" size="sm">ResearchGate</Button>
-            </div>
+            </a>
+            <a
+              href="https://www.scopus.com/authid/detail.uri?authorId=58462578300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="sm">Scopus</Button>
+            </a>
+          </div>
+
           </div>
         </section>
       </div>
