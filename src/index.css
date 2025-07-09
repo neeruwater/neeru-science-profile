@@ -2,39 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Academic Design System for Dr. Neeru Chaudhary's Website
+All colors MUST be HSL. Clean, professional academic styling.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Academic Light Theme */
+    --background: 0 0% 99%;
+    --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Academic Blue - Professional yet approachable */
+    --primary: 210 45% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 210 35% 85%;
+    --primary-hover: 210 45% 30%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Subtle Academic Accents */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 15% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 15% 96%;
+    --muted-foreground: 210 12% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 25% 94%;
+    --accent-foreground: 210 15% 30%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Academic Colors */
+    --academic-gold: 45 85% 65%;
+    --academic-navy: 210 50% 20%;
+    --academic-sage: 120 15% 45%;
+    --academic-warm: 25 20% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 90%;
+    --input: 210 15% 94%;
+    --ring: 210 45% 25%;
 
     --radius: 0.5rem;
 
@@ -100,6 +111,79 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
+  }
+
+  /* Academic Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-medium;
+  }
+
+  .academic-heading {
+    @apply font-sans font-semibold text-primary;
+  }
+
+  .academic-body {
+    @apply font-serif text-foreground leading-relaxed;
+  }
+
+  .academic-caption {
+    @apply font-sans text-sm text-muted-foreground;
+  }
+
+  /* Academic Button Variants */
+  .btn-academic {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 py-3 font-sans font-medium transition-colors;
+  }
+
+  .btn-academic-outline {
+    @apply border border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground rounded-lg px-6 py-3 font-sans font-medium transition-colors;
+  }
+
+  /* Academic Card Styling */
+  .academic-card {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  /* Molecular Pattern Background */
+  .molecular-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 20%, hsl(var(--primary)) 1px, transparent 1px),
+      radial-gradient(circle at 80% 40%, hsl(var(--accent-foreground)) 1px, transparent 1px),
+      radial-gradient(circle at 40% 80%, hsl(var(--primary)) 1px, transparent 1px);
+    background-size: 40px 40px, 60px 60px, 80px 80px;
+    opacity: 0.03;
+  }
+
+  /* Academic Animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Research Focus Areas Grid */
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Publication List Styling */
+  .publication-item {
+    @apply border-l-4 border-primary/20 pl-4 py-3 hover:border-primary/40 transition-colors;
+  }
+
+  .publication-item:hover {
+    @apply bg-accent/50;
   }
 }
