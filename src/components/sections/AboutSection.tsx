@@ -11,7 +11,7 @@ const AboutSection = () => {
             <p className="academic-body text-lg leading-relaxed">
               I am a computational chemical engineer with expertise in combining{" "}
               <strong>Density Functional Theory (DFT)</strong>, <strong>machine learning</strong>, 
-              and <strong>polymer informatics</strong> to drive innovation in sustainable technologies. 
+              and <strong>functional data analysis</strong> to drive innovation in sustainable technologies. 
               My research focuses on computational catalysis for CO₂ reduction reactions (CO₂RR), 
               fuel cell optimization, and the development of advanced materials through data-driven approaches.
             </p>
